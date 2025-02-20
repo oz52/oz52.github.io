@@ -3,28 +3,45 @@ body {
 	background: #202020;
 }
 
-option, optgroup, #navigation-bar, #nwidget {
+option,
+optgroup,
+#nwidget,
+#navigation-bar {
 	background: #404040;
 }
 
-#logo, #banner {
+#logo,
+#banner {
 	background-image: url("res/logo-w.svg");
 }
 
-#game-category, #game-navigator, #item-category, #item-navigator {
+#game-category,
+#game-navigator,
+#item-category,
+#item-navigator {
 	border-color: #606060;
 	background: #404040;
 }
 
-#version, #nav-bar>button, #game-category>button, #item-category>button {
+#version,
+#nav-bar>button,
+#game-category>button,
+#item-category>button {
 	color: #d0d0d0;
 }
 
-#nav-bar>button[data-current], #game-category>button[data-current], #item-category>button[data-current], #chatmode>button, #ac-un, #id {
+#id,
+#ac-un,
+#chatmode>button,
+#nav-bar>button[data-current],
+#game-category>button[data-current],
+#item-category>button[data-current] {
 	color: #ffffff;
 }
 
-#hamb, #hamb::before, #hamb::after {
+#hamb,
+#hamb::before,
+#hamb::after {
 	background: #ffffff;
 }
 
@@ -33,7 +50,8 @@ option, optgroup, #navigation-bar, #nwidget {
 	background-image: url("res/login-w.svg");
 }
 
-#accn-btn[data-ac] {
+#accn-btn[data-ac],
+#chinfo[data-op="profile"] {
 	background-image: url("res/account-w.svg");
 }
 
@@ -46,15 +64,18 @@ option, optgroup, #navigation-bar, #nwidget {
 	background-image: url("res/bell-empty-w.svg");
 }
 
-#accn-btn:hover, #nmsg-btn:hover {
+#accn-btn:hover,
+#nmsg-btn:hover {
 	filter: brightness(85%);
 }
 
-#accn-btn:active, #nmsg-btn:active {
+#accn-btn:active,
+#nmsg-btn:active {
 	filter: brightness(90%);
 }
 
-#accn-btn[data-current], #nmsg-btn[data-current] {
+#accn-btn[data-current],
+#nmsg-btn[data-current] {
 	filter: none;
 }
 
@@ -62,24 +83,35 @@ option, optgroup, #navigation-bar, #nwidget {
 	background-image: url("res/search-w.svg");
 }
 
-.game, .item {
+.game,
+.item {
 	border-color: #606060;
 	background-color: #404040;
 }
 
-.list-body>div>div>.desc, #nwidget>div>span, #ac-friends>div>span, #bio, #ac-bio {
+#bio,
+#ac-bio
+#nwidget>div>span,
+#ac-friends>div>span,
+.list-body>div>div>.desc {
 	color: #c0c0c0;
 }
 
-.list-body>div>div>.time, #footer, #game-disclaimer, #item-disclaimer, #idisc {
+#idisc
+#footer,
+#game-disclaimer,
+#item-disclaimer,
+.list-body>div>div>.time {
 	color: #a0a0a0;
 }
 
-#sidemenu, #header {
+#header,
+#sidemenu {
 	background: #404040;
 }
 
-#chatmode, #account {
+#account,
+#chatmode {
 	background: #505050;
 }
 
@@ -107,11 +139,22 @@ option, optgroup, #navigation-bar, #nwidget {
 	background-image: url("res/new-chat-w.svg");
 }
 
-#history>div>button, #messages>div>button.delete, #comments>div>button.delete {
+#history>div>button,
+#messages>div>button.delete,
+#comments>div>button.delete {
 	background-image: url("res/delete-w.svg");
 }
 
-#chat, #ac-prof {
+#chinfo[data-op="grinfo"] {
+	background-image: url("res/info-w.svg");
+}
+
+#chinfo[data-op="discord"] {
+	background-image: url("res/newtab-w.svg");
+}
+
+#chat,
+#ac-prof {
 	background: #202020;
 }
 
@@ -123,27 +166,63 @@ option, optgroup, #navigation-bar, #nwidget {
 	background-image: url("res/add-file-w.svg");
 }
 
-#yt-load-more:hover, #p-load-more:hover, #loadmore:hover, #menu>div:hover, #ub-shortcuts>div:hover, .list-body>div:hover {
+#loadmore:hover,
+#menu>div:hover,
+#p-load-more:hover,
+#yt-load-more:hover,
+.list-body>div:hover,
+#ub-shortcuts>div:hover {
 	background: #404040;
 }
 
-#yt-load-more:active, #p-load-more:active, #loadmore:active, #menu>div:active, #ub-shortcuts>div:active, .list-body>div:active {
+#loadmore:active,
+#menu>div:active,
+#p-load-more:active,
+#yt-load-more:active,
+.list-body>div:active,
+#ub-shortcuts>div:active {
 	background: #606060;
 }
 
-#chatmode>button:not([data-current]):hover, #toggle:hover, #newchat:hover, #history>div:hover, #msglist>div:hover, #channels>div:hover, #account-settings input~button:hover, #ac-friends>div>button:hover {
+#chatmode>button:not([data-current]):hover,
+#toggle:hover,
+#chinfo:hover,
+#newchat:hover,
+#history>div:hover,
+#msglist>div:hover,
+#channels>div:hover,
+#grusers>div>button:hover,
+#ac-friends>div>button:hover,
+#account-settings input~button:hover {
 	background-color: #606060;
 }
 
-#chatmode>button:not([data-current]):active, #toggle:active, #newchat:active, #history>div:active, #history>div[data-current], #msglist>div:active, #msglist>div[data-current], #channels>div:active, #channels>div[data-current], #account-settings input~button:active, #ac-friends>div>button:active {
+#chatmode>button:not([data-current]):active,
+#toggle:active,
+#chinfo:active,
+#newchat:active,
+#history>div:active,
+#msglist>div:active,
+#channels>div:active,
+#grusers>div>button:active,
+#history>div[data-current],
+#msglist>div[data-current],
+#channels>div[data-current],
+#ac-friends>div>button:active,
+#account-settings input~button:active {
 	background-color: #808080;
 }
 
-#account-settings button.tick, #messages>div button.tick, #comments>div button.tick {
+#messages>div button.tick,
+#comments>div button.tick,
+#account-settings button.tick {
 	background-image: url("res/tick-w.svg");
 }
 
-#account-settings button.cross, #messages>div button.cross, #comments>div button.cross {
+#grusers>div button.cross,
+#messages>div button.cross,
+#comments>div button.cross,
+#account-settings button.cross {
 	background-image: url("res/close-w.svg");
 }
 
@@ -151,7 +230,12 @@ option, optgroup, #navigation-bar, #nwidget {
 	background-image: url("res/new-chat-w.svg");
 }
 
-#ac-edit, #ac-bio-edit, #ac-name-edit, #ac-email-edit, #messages>div>button.edit, #comments>div>button.edit {
+#ac-edit,
+#ac-bio-edit,
+#ac-name-edit,
+#ac-email-edit,
+#messages>div>button.edit,
+#comments>div>button.edit {
 	background-image: url("res/edit-w.svg");
 }
 
@@ -159,7 +243,8 @@ option, optgroup, #navigation-bar, #nwidget {
 	background-image: url("res/link-w.svg");
 }
 
-#like, #vlike {
+#like,
+#vlike {
 	background-image: url("res/thumb-up-w.svg");
 }
 
