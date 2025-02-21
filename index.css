@@ -1569,16 +1569,16 @@ div.user[data-vip="diamond"]::after {
 	display: block;
 }
 
+#chinfo[data-op="grinfo"] {
+	background-image: url("res/info.svg");
+}
+
 #chinfo[data-op="discord"] {
 	background-image: url("res/newtab.svg");
 }
 
 #chinfo[data-op="profile"] {
 	background-image: url("res/account.svg");
-}
-
-#chinfo[data-op="grinfo"] {
-	background-image: url("res/info.svg");
 }
 
 #picker {
