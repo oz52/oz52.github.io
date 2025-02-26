@@ -16,17 +16,14 @@ optgroup,
 }
 
 #game-category,
-#game-navigator,
-#item-category,
-#item-navigator {
+#game-navigator {
 	border-color: #606060;
 	background: #404040;
 }
 
 #version,
 #nav-bar>button,
-#game-category>button,
-#item-category>button {
+#game-category>button {
 	color: #d0d0d0;
 }
 
@@ -34,8 +31,7 @@ optgroup,
 #ac-un,
 #chatmode>button,
 #nav-bar>button[data-current],
-#game-category>button[data-current],
-#item-category>button[data-current] {
+#game-category>button[data-current] {
 	color: #ffffff;
 }
 
@@ -83,8 +79,7 @@ optgroup,
 	background-image: url("res/search-w.svg");
 }
 
-.game,
-.item {
+.game {
 	border-color: #606060;
 	background-color: #404040;
 }
@@ -100,7 +95,6 @@ optgroup,
 #idisc
 #footer,
 #game-disclaimer,
-#item-disclaimer,
 .list-body>div>div>.time {
 	color: #a0a0a0;
 }
