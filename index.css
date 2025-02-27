@@ -124,7 +124,7 @@
 	border-right: 2px solid #808080;
 }
 
-#nav-bar>button, #game-category>button, #item-category>button {
+#nav-bar>button, #game-category>button {
 	position: relative;
 	display: inline-block;
 	width: fit-content;
@@ -139,15 +139,15 @@
 	vertical-align: top;
 }
 
-#nav-bar>button:hover, #game-category>button:hover, #item-category>button:hover {
+#nav-bar>button:hover, #game-category>button:hover {
 	color: #a0a0a0;
 }
 
-#nav-bar>button:active, #game-category>button:active, #item-category>button:active {
+#nav-bar>button:active, #game-category>button:active {
 	color: #c0c0c0;
 }
 
-#nav-bar>button[data-current], #game-category>button[data-current], #item-category>button[data-current] {
+#nav-bar>button[data-current], #game-category>button[data-current] {
 	color: #303030;
 	font-weight: 600;
 }
@@ -576,11 +576,11 @@
 	background-position: 0px 0px;
 }
 
-.game:hover, .item:hover {
+.game:hover {
 	border-color: #808080;
 }
 
-.game:active, .item:active {
+.game:active {
 	border-color: #303030;
 }
 
@@ -610,7 +610,7 @@
 	text-transform: uppercase;
 }
 
-.game>div, .item>div {
+.game>div {
 	position: absolute;
 	display: block;
 	width: 134px;
@@ -619,36 +619,6 @@
 	top: 108px;
 	font-size: 12px;
 	text-align: center;
-	line-height: 14px;
-	letter-spacing: 0px;
-}
-
-.item {
-	position: relative;
-	display: inline-block;
-	width: 144px;
-	height: 164px;
-	margin: 0px 15px 15px 0px;
-	cursor: pointer;
-	border: 1px solid #a0a0a0;
-	border-radius: 10px;
-	vertical-align: top;
-	text-decoration: none;
-	background-size: 144px 108px;
-	background-color: #f0f0f0;
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-}
-
-.item>span {
-	position: absolute;
-	display: block;
-	width: 134px;
-	height: 14px;
-	padding: 3px 5px;
-	top: 144px;
-	text-align: center;
-	font-weight: 600;
 	line-height: 14px;
 	letter-spacing: 0px;
 }
@@ -909,7 +879,7 @@ div.user[data-vip="diamond"]::after {
 	margin: 15px 0px;
 }
 
-#weather>embed, #calc-container>embed, #webemu-container>embed, #console-container>embed, #test-frame>embed, body>embed, body>iframe {
+#weather>embed, #test-frame>embed, body>embed, body>iframe {
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -917,7 +887,7 @@ div.user[data-vip="diamond"]::after {
 	overflow: hidden;
 }
 
-#game-category, #item-category {
+#game-category {
 	position: relative;
 	display: block;
 	width: calc(100% - 2px);
@@ -928,7 +898,7 @@ div.user[data-vip="diamond"]::after {
 	background: #f0f0f0;
 }
 
-#game-sortorder, #item-sortorder {
+#game-sortorder {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -937,7 +907,7 @@ div.user[data-vip="diamond"]::after {
 	text-align: right;
 }
 
-#game-sortorder>label, #item-sortorder>label {
+#game-sortorder>label {
 	position: relative;
 	display: inline-block;
 	width: fit-content;
@@ -948,7 +918,7 @@ div.user[data-vip="diamond"]::after {
 	vertical-align: top;
 }
 
-#game-sortorder>select, #item-sortorder>select {
+#game-sortorder>select {
 	position: relative;
 	display: inline-block;
 	width: fit-content;
@@ -962,7 +932,7 @@ div.user[data-vip="diamond"]::after {
 	vertical-align: top;
 }
 
-#game-container, #item-container {
+#game-container {
 	position: relative;
 	display: block;
 	width: calc(100% + 12px);
@@ -970,7 +940,7 @@ div.user[data-vip="diamond"]::after {
 	margin: 10px 0px 30px;
 }
 
-#game-navigator, #item-navigator {
+#game-navigator {
 	position: relative;
 	display: block;
 	width: fit-content;
@@ -980,7 +950,7 @@ div.user[data-vip="diamond"]::after {
 	background: #f0f0f0;
 }
 
-#game-navigator>button, #item-navigator>button {
+#game-navigator>button {
 	position: relative;
 	display: inline-block;
 	width: 30px;
@@ -998,28 +968,28 @@ div.user[data-vip="diamond"]::after {
 	background-position: 0px 0px;
 }
 
-#game-navigator>button:disabled, #item-navigator>button:disabled {
+#game-navigator>button:disabled {
 	cursor: default;
 	filter: brightness(200%) contrast(40%);
 	border-color: #c0c0c0;
 }
 
-#game-navigator>button:not(:disabled):active, #item-navigator>button:not(:disabled):active {
+#game-navigator>button:not(:disabled):active {
 	border-top-color: #808080;
 	border-left-color: #808080;
 	border-right-color: #ffffff;
 	border-bottom-color: #ffffff;
 }
 
-#gnav-back, #nav-back {
+#gnav-back {
 	background-image: url("res/back.svg");
 }
 
-#gnav-forward, #nav-forward {
+#gnav-forward {
 	background-image: url("res/forward.svg");
 }
 
-#game-navigator>div, #item-navigator>div {
+#game-navigator>div {
 	position: relative;
 	display: inline-block;
 	width: fit-content;
@@ -1032,7 +1002,7 @@ div.user[data-vip="diamond"]::after {
 	vertical-align: top;
 }
 
-#game-navigator>div>input, #item-navigator>div>input {
+#game-navigator>div>input {
 	position: relative;
 	display: inline;
 	width: 40px;
@@ -1045,11 +1015,11 @@ div.user[data-vip="diamond"]::after {
 	border-bottom: 1px solid #808080;
 }
 
-#game-navigator>div>input:focus, #item-navigator>div>input:focus {
+#game-navigator>div>input:focus {
 	border-bottom: 1px solid #303030;
 }
 
-#game-disclaimer, #item-disclaimer, #idisc {
+#game-disclaimer {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -1071,7 +1041,7 @@ div.user[data-vip="diamond"]::after {
 	letter-spacing: 0px;
 }
 
-#ub-container, #gamemu-container {
+#gamemu-page>div, #unbl0ck-page>div {
 	position: relative;
 	display: block;
 	width: calc(100% - 30px);
@@ -1212,7 +1182,7 @@ div.user[data-vip="diamond"]::after {
 	margin: 20px 0px 10px;
 }
 
-#webemu-container {
+#webemu-page>embed {
 	position: relative;
 	display: block;
 	width: 1200px;
@@ -1221,7 +1191,7 @@ div.user[data-vip="diamond"]::after {
 	overflow: hidden;
 }
 
-#calc-container, #console-container {
+#desmos-page>embed, #console-page>embed {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -1859,7 +1829,7 @@ div.user[data-vip="diamond"]::after {
 	display: none;
 }
 
-#account-settings>button, #settings-page>button, #group-page>button, #purchase-page>button {
+#account-settings>button, #services-page>button, #settings-page>button, #group-page>button {
 	position: relative;
 	display: block;
 	width: 120px;
@@ -2031,7 +2001,7 @@ div.user[data-vip="diamond"]::after {
 	letter-spacing: 0px;
 }
 
-#ac-games, #ac-friends, #grusers, #pf-games, #pf-items, #s-products {
+#ac-games, #ac-friends, #grusers, #pf-games {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -2040,28 +2010,6 @@ div.user[data-vip="diamond"]::after {
 	max-height: 640px;
 	overflow-x: hidden;
 	overflow-y: auto;
-}
-
-#ac-orders, #s-orders {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: fit-content;
-	margin: 20px 0px;
-}
-
-#ac-orders>table, #s-orders>table {
-	position: relative;
-	width: fit-content;
-	height: fit-content;
-	border: 2px solid #303030;
-}
-
-#ac-orders>table th, #ac-orders>table td, #s-orders>table th, #s-orders>table td {
-	position: relative;
-	width: fit-content;
-	height: fit-content;
-	border: 1px solid #808080;
 }
 
 #ac-friends>div, #grusers>div {
@@ -2206,112 +2154,6 @@ div.user[data-vip="diamond"]::after {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 24px;
-}
-
-#purchase-page>div {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 70px;
-	margin: 15px 0px;
-}
-
-#purchase-page>div>img {
-	position: absolute;
-	display: block;
-	width: 50px;
-	height: 50px;
-	top: 10px;
-	left: 10px;
-	object-fit: cover;
-	object-position: center;
-}
-
-#purchase-page>div>div {
-	position: absolute;
-	display: block;
-	width: calc(100% - 114px);
-	height: 32px;
-	top: 10px;
-	left: 70px;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0px;
-}
-
-#purchase-page>div>span {
-	position: absolute;
-	display: block;
-	width: calc(100% - 114px);
-	height: 18px;
-	top: 42px;
-	left: 70px;
-	font-size: 13px;
-	font-weight: 600;
-	line-height: 18px;
-	letter-spacing: 0px;
-}
-
-#purchase-page>div>button {
-	position: absolute;
-	display: block;
-	width: 24px;
-	height: 24px;
-	top: 18px;
-	right: 10px;
-	border: 2px solid #303030;
-	cursor: pointer;
-	outline: none;
-	background-image: url("res/close.svg");
-	background-size: 24px 24px;
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-}
-
-#purchase-page>span {
-	position: relative;
-	display: block;
-	width: fit-content;
-	height: fit-content;
-	margin: 15px 0px;
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 24px;
-	letter-spacing: 0px;
-}
-
-#purchase-page>form {
-	position: relative;
-	display: block;
-	width: calc(100% - 20px);
-	height: fit-content;
-	margin: 15px 0px;
-	padding: 10px;
-}
-
-#purchase-page>form>div {
-	position: relative;
-	display: block;
-	width: fit-content;
-	height: fit-content;
-	margin: 15px 0px;
-}
-
-#purchase-page>form>fieldset {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: fit-content;
-	margin: 15px 0px;
-	border: 1px solid #808080;
-}
-
-#purchase-page>form>fieldset>div {
-	position: relative;
-	display: block;
-	width: fit-content;
-	height: fit-content;
-	margin: 5px;
 }
 
 #bottom-widget {
@@ -2467,25 +2309,8 @@ div.user[data-vip="diamond"]::after {
 	background-position: 0px 0px;
 }
 
-#settings:active, #checkout:active {
+#settings:active {
 	box-shadow: -2px -2px #808080;
-}
-
-#checkout {
-	position: absolute;
-	display: none;
-	width: 48px;
-	height: 48px;
-	right: 78px;
-	bottom: 22px;
-	cursor: pointer;
-	outline: none;
-	box-shadow: 2px 2px #808080;
-	border-radius: 25px;
-	background-image: url("res/checkout.svg");
-	background-size: 48px 48px;
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
 }
 
 #frame-view {
@@ -2741,38 +2566,6 @@ div.user[data-vip="diamond"]::after {
 	margin: 0px 8px 0px 0px;
 }
 
-#previews {
-	position: relative;
-	display: flex;
-	width: 100%;
-	height: 320px;
-	gap: 10px;
-	flex-wrap: nowrap;
-	flex-direction: row;
-	overflow-x: auto;
-	overflow-y: hidden;
-}
-
-#previews>img {
-	position: relative;
-	display: block;
-	width: 400px;
-	height: 300px;
-	flex: 300px 0 0;
-	object-fit: cover;
-	object-position: center;
-}
-
-#ibuy, #iadd {
-	position: relative;
-	display: inline-block;
-	width: calc(50% - 45px);
-	height: 20px;
-	margin: 20px 10px;
-	padding: 5px 0px;
-	vertical-align: top;
-}
-
 #vlike {
 	cursor: not-allowed;
 	background-image: url("res/thumb-up.svg");
@@ -2950,7 +2743,7 @@ div.user[data-vip="diamond"]::after {
 }
 
 @media (max-width: 850px) and (orientation: portrait) {
-	#community-page>div, #game, #calc-container, #console-container {
+	#community-page>div, #game, #desmos-page>embed, #console-page>embed {
 		aspect-ratio: 9/18;
 	}
 }
